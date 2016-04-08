@@ -1,0 +1,9 @@
+<div class="answerTilePage">
+  <li>
+    {{answer.question.title}}
+    <br>
+    {{#link-to 'answer' answer.id}}
+    {{answer.author}} says: {{answer.title}}
+    {{/link-to}}
+  </li>  
+</div>

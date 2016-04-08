@@ -1,0 +1,54 @@
+.content{
+  font-family: 'Indie Flower';
+  .questions {
+    max-width: 400px;
+  }
+
+  .answers {
+    max-width: 950px;
+  }
+  .questions, .answers {
+    background-color: #e0ebeb;
+    height: auto;
+    font-family: 'Indie Flower';
+    border: solid 2px black;
+    margin: 10px;
+    box-shadow: 2px 3px grey;
+    padding: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+
+    h4 {
+      font-size: 48px;
+      text-align: center;
+      text-decoration: underline;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+      font-size: 36px
+    }
+
+    li {
+      text-align: left;
+      font-size: 24px;
+      margin-left: 5px;
+    }
+  }
+
+  .btn-ask {
+    button {
+      font-size: 24px;
+      width: 94%;
+      margin: 10px;
+    }
+  }
+}

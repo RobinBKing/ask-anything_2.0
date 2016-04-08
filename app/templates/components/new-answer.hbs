@@ -1,0 +1,24 @@
+{{#if addNewAnswer}}
+  <div class="newAnswerPage">
+    <form id="newAnswerForm">
+      <div class="form-group">
+        <label for="title">What's Your Answer?</label>
+        {{input value=title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Says Who?</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="date">Insert Date</label>
+        {{input value=date id="date"}}
+      </div>
+
+      <button {{action 'saveAnswer1'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+    <button {{action 'answerFormShow'}}>Answer the Question</button>
+{{/if}}

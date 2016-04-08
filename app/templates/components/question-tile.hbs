@@ -1,0 +1,9 @@
+<div class="questionTilePage">
+  <ul>
+    {{#each question.answers as |answer|}}
+    <li>{{answer-tile answer=answer}}</li>
+    {{/each}}
+  </ul>
+  <br>
+  <button {{action 'delete' question}}>Delete</button>
+</div>

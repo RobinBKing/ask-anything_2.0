@@ -1,0 +1,22 @@
+{ "catagories": [{
+  "name": "History"
+  },
+  {
+    "name": "Culture"
+  },
+  {
+    "name": "Science"
+  },
+  {
+    "name": "Polotics"
+  },
+  {
+    "name": "Religion"
+  },
+  {
+    "name": "Spirituality"
+  },
+  {
+    "name": "Other"
+    }]
+}

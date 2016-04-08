@@ -1,4 +1,6 @@
 <div class="questionTilePage">
+  <h3>  {{question.title}} </h3>
+  <br>
   <ul>
     {{#each question.answers as |answer|}}
     <li>{{answer-tile answer=answer}}</li>

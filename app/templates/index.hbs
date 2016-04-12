@@ -13,10 +13,14 @@
     <h4> People Want to Know </h4>
     <ul>
       {{#each model.questions as |question|}}
-      <li>
-        {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
-        {{question-tile question=model destroyQuestion="destroyQuestion"}}
-      </li>
+        <li>
+          {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
+            <ul>
+              {{#each question.answers  as |answer|}}
+                {{answer-tile answer=answer}}
+              {{/each}}
+            </ul>
+        </li>
       {{/each}}
     </ul>
   </div>

@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         answer: this.get('answer'),
         author: this.get('author'),
         date: this.get('date'),
+        rating: this.get('rating')
       };
       this.set('updateAnswerForm', false);
       this.sendAction('update', answer, params);

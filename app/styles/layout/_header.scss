@@ -2,12 +2,11 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .jumbotron {
-    display: flex;
-    justify-content: center;
     background-image: url("http://www.hccc.org.ng/wp-content/uploads/2014/02/ask-anything.jpg");
     background-size: cover;
     max-width: 1295px;
     height: 500px;
+    margin: auto, 0;
 
     text-align: center;
     h3 {

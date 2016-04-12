@@ -1,13 +1,13 @@
 .content{
   font-family: 'Indie Flower';
-  .questions {
+  .questions, .bookmarks {
     max-width: 400px;
   }
 
   .answers {
     max-width: 950px;
   }
-  .questions, .answers {
+  .questions, .answers, .bookmarks, .questionForm, .answerPage {
     background-color: #e0ebeb;
     height: auto;
     font-family: 'Indie Flower';
@@ -53,6 +53,11 @@
   }
 }
 
-.questionForm {
+.questionForm, .answerPage {
   background-color: #e0ebeb;
+  height: auto;
+  font-family: 'Indie Flower';
+  border: solid 2px black;
+  margin: 10px;
+  box-shadow: 2px 3px grey;
 }

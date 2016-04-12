@@ -6,5 +6,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   date: DS.attr(),
   comments: DS.hasMany('comment', {async: true}),
-  ratings: DS.hasMany('rating', {async: true})
+  rating: DS.attr(),
 });

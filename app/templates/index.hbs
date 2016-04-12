@@ -1,27 +1,35 @@
 <div class="jumbotron">
   <h3>Find answers to your questions . . . or questions to answer.</h3>
 </div>
-<div class="content row">
-  <div class="col col-sm-3 questions">
-    <a href="#"><img src="http://michaelruguleiski.com/wp-content/uploads/2014/01/Kid-raising-hand.jpg" alt="" /></a>
-    <h4>Got Questions?</h4>
-    {{new-question saveQuestion2="saveQuestion3"}}
-  </div>
 
-  <div class="col col-sm-9 answers">
-    <a href="#"><img src="http://cdn.theatlantic.com/assets/media/img/2014/07/14/opener_v02-2/1920.jpg?1440086868" alt="People want to know" /></a>
-    <h4> People Want to Know </h4>
-    <ul>
-      {{#each model.questions as |question|}}
-        <li>
-          {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
-            <ul>
-              {{#each question.answers  as |answer|}}
-                {{answer-tile answer=answer}}
-              {{/each}}
-            </ul>
-        </li>
-      {{/each}}
-    </ul>
+<div class="container-fluid">
+  <div class="content row">
+    <div class="col col-sm-3 questions">
+      <a href="#"><img src="http://michaelruguleiski.com/wp-content/uploads/2014/01/Kid-raising-hand.jpg" alt="" /></a>
+      <h4>Got Questions?</h4>
+      {{new-question saveQuestion2="saveQuestion3"}}
+    </div>
+
+    <div class="col col-sm-9 answers">
+      <a href="#"><img src="http://cdn.theatlantic.com/assets/media/img/2014/07/14/opener_v02-2/1920.jpg?1440086868" alt="People want to know" /></a>
+      <h4> People Want to Know </h4>
+      <ul>
+        {{#each model.questions as |question|}}
+          <li>
+            {{#link-to 'question' question.id}}{{question.title}}{{/link-to}}
+              <ul>
+                {{#each question.answers  as |answer|}}
+                  {{answer-tile answer=answer}}
+                {{/each}}
+              </ul>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <!-- <div class="col col-sm-2 bookmarks">
+      <h4>Bookmarks</h4>
+      {{bookmarks}}
+    </div> -->
   </div>
 </div>

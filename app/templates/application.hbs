@@ -1,6 +1,8 @@
-<nav>
-  {{#link-to 'index'}}Home{{/link-to}}
-  {{#link-to 'contact'}}Contact{{/link-to}}
-  {{#link-to 'about'}}About{{/link-to}}
-</nav>
+<div class="navigator">
+  <ul id="menu">
+    <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+    <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+    <li>{{#link-to 'about'}}About{{/link-to}}</li>
+  </ul>
+</div>
 {{outlet}}

@@ -1,9 +1,9 @@
 <div class="questionForm">
-  <h2>{{model.title}}</h2>
+  <h1>{{model.title}}</h1>
   <br>
   {{question-tile question=model destroyQuestion="destroyQuestion"}}
   <br>
+  {{update-question question=model update="update"}}
+  <br>
   {{new-answer saveAnswer2="saveAnswer3" question=model}}
-  {{!-- <br>
-  {{update-question question=model update="update"}} --}}
 </div>

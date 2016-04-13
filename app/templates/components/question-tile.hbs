@@ -1,9 +1,12 @@
 <div class="questionTilePage">
+  <div class="kidQuestion">
+    <img src="https://cumuloquoise.files.wordpress.com/2014/09/kid-asking-questions.jpg" alt="" />
+  </div>
   <ul>
-    {{#each question.answers  as |answer|}}
+    {{#each sortedAnswers as |answer|}}
       {{answer-tile answer=answer}}
     {{/each}}
   </ul>
   <br>
-  <button {{action 'delete' question}}>Delete</button>
+  <button {{action 'delete' question}}>Delete the Question</button>
 </div>

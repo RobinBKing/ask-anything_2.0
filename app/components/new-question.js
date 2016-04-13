@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         title: this.get('title'),
         description: this.get('description'),
         author: this.get('author'),
-        date: this.get('date'),
+        date: new Date(),//this.get('date'),
       };
 
       this.set('addNewQuestion', false);

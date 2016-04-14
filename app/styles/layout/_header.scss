@@ -24,12 +24,13 @@ ul#menu li a:hover {
 .jumbotron {
   background-image: url("http://www.hccc.org.ng/wp-content/uploads/2014/02/ask-anything.jpg");
   background-size: cover;
-  max-width: 1295px;
-  height: 500px;
+  // max-width: 1495px;
+  // height: 500px;
+  height: 50vh;
   margin: auto, 0;
 
   text-align: center;
-  h3 {
+  h1 {
     font-family: 'Indie Flower';
     font-weight: bold;
     font-size: 40px;

@@ -1,50 +1,11 @@
 .content{
   font-family: 'Indie Flower';
   .questions, .bookmarks {
-    max-width: 400px;
+    max-width: 300px;
   }
 
   .answers, .kidQuestion {
     max-width: 950px;
-  }
-
-  .questions, .answers, .bookmarks, .questionForm, .answerPage, .answerDetailPage {
-    background-color: #e0ebeb;
-    width: 100%;
-    height: auto;
-    font-family: 'Indie Flower';
-    border: solid 2px black;
-    margin: 10px;
-    box-shadow: 2px 3px grey;
-    padding: 0;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      margin: 0, auto;
-    }
-
-    h4 {
-      font-size: 48px;
-      text-align: center;
-      text-decoration: underline;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    p {
-      margin: 0;
-      text-align: center;
-      font-size: 36px
-    }
-
-    li {
-      text-align: left;
-      font-size: 24px;
-      margin-left: 5px;
-    }
   }
 
   .btn-ask {
@@ -56,18 +17,49 @@
   }
 }
 
-.questionForm, .answerPage {
+.questions, .answers, .bookmarks, .questionForm, .answerPage, .answerDetailPage {
   background-color: #e0ebeb;
-  height: auto;
+  width: 100%;
+  // height: auto;
+  border: solid 2px black;
+  box-shadow: 2px 3px grey;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
   font-family: 'Indie Flower';
   font-weight: bold;
   color: black;
-  border: solid 2px black;
-  margin: 10px;
-  box-shadow: 2px 3px grey;
+  text-shadow: 1px 2px grey;
+
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0, auto;
+  }
 
   h1 {
     font-size: 40px;
+  }
+
+  h4 {
+    font-size: 48px;
+    text-align: center;
+    text-decoration: underline;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 36px
+  }
+
+  li {
+    text-align: left;
+    font-size: 24px;
+    margin-left: 5px;
   }
 }
 
@@ -82,7 +74,7 @@
 .kidAnswer {
   max-width: 950px;
   width: 100%;
-  
+
   img {
     width: 100%;
     height: 100%;

@@ -1,5 +1,4 @@
 /* jshint node: true */
-
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ask-anything',
@@ -42,7 +41,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/ask-anything_2.0/dist';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
